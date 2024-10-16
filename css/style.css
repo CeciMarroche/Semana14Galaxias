@@ -1,0 +1,29 @@
+main {
+  min-height: calc(100vh - 160px);
+}
+
+.card { 
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  /* Remueve la altura fija */
+  min-height: 300px; /* Establece un tamaño mínimo si es necesario */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que el contenido crezca */
+}
+
+.card-text {
+  max-height: 200px; /* Ajusta el máximo según el tamaño de la tarjeta */
+  overflow-y: auto; /* Activa el scroll vertical solo si es necesario */
+  overflow-x: hidden; /* Oculta el scroll horizontal */
+  margin-bottom: 0;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
